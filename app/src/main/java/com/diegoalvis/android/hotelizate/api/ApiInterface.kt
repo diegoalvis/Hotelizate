@@ -8,6 +8,6 @@ import retrofit2.http.Query
 interface ApiInterface {
 
     @GET("{section}.json")
-    fun getNewsList(@Path("section") section: String, @Query("api-key") apiKey: String): Observable<NewsResponse>
+    fun getNewsList(@Path("section") section: String): Observable<NewsResponse>
 
 }

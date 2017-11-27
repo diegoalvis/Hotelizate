@@ -1,11 +1,9 @@
 package com.diegoalvis.android.newsapp.ui.adapters
 
-import android.databinding.DataBindingUtil
 import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.view.ViewGroup
-import com.diegoalvis.android.newsapp.R
-import com.diegoalvis.android.newsapp.databinding.ItemArticleBinding
+import com.diegoalvis.android.hotelizate.R
 import com.diegoalvis.android.newsapp.models.Article
 import com.diegoalvis.android.newsapp.utils.inflate
 import io.reactivex.Observable
@@ -24,8 +22,8 @@ class ArticlesAdapter : RecyclerView.Adapter<ArticlesAdapter.ArticleViewHolder>(
             = ArticleViewHolder(parent.inflate(R.layout.item_article))
 
     override fun onBindViewHolder(holder: ArticleViewHolder, position: Int) {
-        holder.binding.article = items[position]
-        holder.binding.selected = articleSelected
+//        holder.binding.article = items[position]
+//        holder.binding.selected = articleSelected
     }
 
     override fun getItemCount() = items.size
@@ -33,7 +31,7 @@ class ArticlesAdapter : RecyclerView.Adapter<ArticlesAdapter.ArticleViewHolder>(
     fun articleSelected(): Observable<Article> = articleSelected
 
     class ArticleViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        var binding: ItemArticleBinding = DataBindingUtil.bind(itemView)
+//        var binding: ItemArticleBinding = DataBindingUtil.bind(itemView)
     }
 
 }

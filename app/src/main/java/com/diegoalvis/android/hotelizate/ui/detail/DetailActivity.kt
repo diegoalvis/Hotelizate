@@ -1,9 +1,8 @@
 package com.diegoalvis.android.newsapp.ui.detail
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-
-import com.diegoalvis.android.newsapp.R
+import android.support.v7.app.AppCompatActivity
+import com.diegoalvis.android.hotelizate.R
 
 class DetailActivity : AppCompatActivity() {
 

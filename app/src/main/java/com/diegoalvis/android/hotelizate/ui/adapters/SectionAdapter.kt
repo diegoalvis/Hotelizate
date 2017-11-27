@@ -1,18 +1,13 @@
 package com.diegoalvis.android.newsapp.ui.adapters
 
-import android.databinding.DataBindingUtil
 import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.view.ViewGroup
-import com.diegoalvis.android.newsapp.R
-import com.diegoalvis.android.newsapp.databinding.ItemSectionBinding
+import com.diegoalvis.android.hotelizate.R
 import com.diegoalvis.android.newsapp.utils.inflate
 import io.reactivex.Observable
 import io.reactivex.subjects.PublishSubject
 
-/**
- * Created by diegoalvis on 9/13/17.
- */
 
 class SectionAdapter(sections: Array<String>): RecyclerView.Adapter<SectionAdapter.SectionViewHolder>() {
 
@@ -25,8 +20,8 @@ class SectionAdapter(sections: Array<String>): RecyclerView.Adapter<SectionAdapt
         }
 
     override fun onBindViewHolder(holder: SectionViewHolder, position: Int) {
-        holder.binding.sectionName = items[position]
-        holder.binding.selected = sectionSelected
+//        holder.binding.sectionName = items[position]
+//        holder.binding.selected = sectionSelected
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SectionViewHolder =
@@ -37,6 +32,6 @@ class SectionAdapter(sections: Array<String>): RecyclerView.Adapter<SectionAdapt
     fun sectionSelected(): Observable<String> = sectionSelected
 
     class SectionViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        var binding: ItemSectionBinding = DataBindingUtil.bind(itemView)
+//        var binding: ItemSectionBinding = DataBindingUtil.bind(itemView)
     }
 }
