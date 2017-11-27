@@ -1,10 +1,10 @@
-package com.diegoalvis.android.newsapp.ui.main
+package com.diegoalvis.android.hotelizate.ui.main
 
 import android.content.Context
 import android.databinding.ObservableBoolean
-import com.diegoalvis.android.newsapp.api.ApiClient
-import com.diegoalvis.android.newsapp.api.ApiInterface
-import com.diegoalvis.android.newsapp.models.Article
+import com.diegoalvis.android.hotelizate.api.ApiClient
+import com.diegoalvis.android.hotelizate.api.ApiInterface
+import com.diegoalvis.android.hotelizate.models.Hotel
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
 
@@ -14,12 +14,11 @@ class MainViewModel(private val context: Context){
 
     private val newsApi: ApiInterface = ApiClient.getInstance()
 
-    fun getArticles(section: String): Observable<List<Article>> {
+    fun getHotels(): Observable<List<Hotel>> {
         isLoading.set(true)
         return newsApi
-                .getNewsList(section)
+                .getHotelsList()
                 .doOnTerminate { isLoading.set(false) }
-                .map {response -> response.newsList}
                 .observeOn(AndroidSchedulers.mainThread())
     }
 }

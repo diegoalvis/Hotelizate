@@ -1,13 +1,12 @@
-package com.diegoalvis.android.newsapp.api
+package com.diegoalvis.android.hotelizate.api
 
+import com.diegoalvis.android.hotelizate.models.Hotel
 import io.reactivex.Observable
 import retrofit2.http.GET
-import retrofit2.http.Path
-import retrofit2.http.Query
 
 interface ApiInterface {
 
-    @GET("{section}.json")
-    fun getNewsList(@Path("section") section: String): Observable<NewsResponse>
+    @GET("hotels")
+    fun getHotelsList(): Observable<List<Hotel>>
 
 }

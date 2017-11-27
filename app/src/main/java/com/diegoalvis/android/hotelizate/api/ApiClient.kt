@@ -1,4 +1,4 @@
-package com.diegoalvis.android.newsapp.api
+package com.diegoalvis.android.hotelizate.api
 
 import io.reactivex.schedulers.Schedulers
 import retrofit2.Retrofit
@@ -9,7 +9,7 @@ class ApiClient {
 
     companion object create {
 
-        private val BASE_URL: String = "http://api.nytimes.com/svc/topstories/v2/"
+        private val BASE_URL: String = "http://192.168.0.6:3000/"
         private var retrofit: Retrofit? = null
 
         @Synchronized private fun createInstance() {

@@ -1,4 +1,4 @@
-package com.diegoalvis.android.newsapp.ui.detail
+package com.diegoalvis.android.hotelizate.ui.detail
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity

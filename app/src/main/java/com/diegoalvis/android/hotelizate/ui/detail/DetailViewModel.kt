@@ -1,4 +1,4 @@
-package com.diegoalvis.android.newsapp.ui.detail
+package com.diegoalvis.android.hotelizate.ui.detail
 
 class DetailViewModel {
 }

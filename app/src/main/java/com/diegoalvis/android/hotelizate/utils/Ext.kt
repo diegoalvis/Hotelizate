@@ -1,4 +1,4 @@
-package com.diegoalvis.android.newsapp.utils
+package com.diegoalvis.android.hotelizate.utils
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

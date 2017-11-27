@@ -10,7 +10,7 @@
 
         <variable
             name="viewModel"
-            type="com.diegoalvis.android.newsapp.ui.main.MainViewModel" />
+            type="com.diegoalvis.android.hotelizate.ui.main.MainViewModel" />
     </data>
 
 
@@ -25,30 +25,16 @@
             android:orientation="vertical">
 
             <android.support.v7.widget.RecyclerView
-                android:id="@+id/recyclerSection"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:clipToPadding="true"
-                android:orientation="horizontal"
-                android:scrollbarStyle="outsideInset"
-                android:scrollbars="horizontal"
-                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
-                tools:itemCount="5"
-                tools:listitem="@layout/item_section"
-                tools:visibility="visible" />
-
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/recyclerArticle"
+                android:id="@+id/recyclerHotel"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:clipToPadding="true"
                 android:scrollbarStyle="outsideOverlay"
                 android:scrollbars="vertical"
                 android:visibility="@{!viewModel.isLoading ? View.VISIBLE : View.GONE}"
-                app:layoutManager="android.support.v7.widget.GridLayoutManager"
-                app:spanCount="2"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
                 tools:itemCount="5"
-                tools:listitem="@layout/item_article"
+                tools:listitem="@layout/item_hotel"
                 tools:visibility="visible" />
 
         </LinearLayout>
@@ -57,10 +43,12 @@
             android:id="@android:id/empty"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:indeterminate="true"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
             android:indeterminateTint="?android:colorAccent"
             android:indeterminateTintMode="src_in"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
             android:visibility="@{viewModel.isLoading ? View.VISIBLE : View.GONE}" />
 
 
