@@ -1,6 +1,7 @@
 # Hotelizate
 
 Hotelizate is a project that includes an API Rest of a hotels data base (with fake data) and an Android mobile application.
+This is made up of the API module and android application module
 
 You will need.
 
