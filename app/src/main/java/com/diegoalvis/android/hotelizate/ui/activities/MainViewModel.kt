@@ -1,4 +1,4 @@
-package com.diegoalvis.android.hotelizate.ui.main
+package com.diegoalvis.android.hotelizate.ui.activities
 
 import android.content.Context
 import android.databinding.ObservableBoolean

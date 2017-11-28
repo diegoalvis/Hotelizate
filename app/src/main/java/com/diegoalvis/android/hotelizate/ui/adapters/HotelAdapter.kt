@@ -12,10 +12,12 @@ import com.diegoalvis.android.hotelizate.utils.inflate
 import com.squareup.picasso.Picasso
 import io.reactivex.Observable
 import io.reactivex.subjects.PublishSubject
+import java.util.ArrayList
 
 class HotelAdapter : RecyclerView.Adapter<HotelAdapter.HotelViewHolder>() {
 
     val hotelSelected = PublishSubject.create<Hotel>()
+    var itemsHolder : List<Hotel> = emptyList()
     var items: List<Hotel> = emptyList()
         set(value) {
             field = value
@@ -30,9 +32,21 @@ class HotelAdapter : RecyclerView.Adapter<HotelAdapter.HotelViewHolder>() {
         holder.binding.selected = hotelSelected
     }
 
+    fun searchResults(str: String) {
+        val filterMovies = ArrayList<Hotel>()
+        for (hotel in itemsHolder) {
+            val title = hotel.name.toLowerCase()
+            if (title.contains(str, true)) {
+                filterMovies.add(hotel)
+            }
+        }
+        this.items = filterMovies
+    }
+
+
     override fun getItemCount() = items.size
 
-    fun articleSelected(): Observable<Hotel> = hotelSelected
+    fun hotelSelected(): Observable<Hotel> = hotelSelected
 
     class HotelViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var binding: ItemHotelBinding = DataBindingUtil.bind(itemView)

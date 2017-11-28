@@ -3,6 +3,8 @@ package com.diegoalvis.android.hotelizate.utils
 import android.databinding.BindingAdapter
 import android.net.Uri
 import android.widget.ImageView
+import com.squareup.picasso.MemoryPolicy
+import com.squareup.picasso.NetworkPolicy
 import com.squareup.picasso.Picasso
 import java.util.*
 

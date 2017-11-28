@@ -1,0 +1,56 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.diegoalvis.android.hotelizate.ui.activities.MainViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/searchView"
+            app:iconifiedByDefault="true"
+            app:queryHint="search"
+            app:defaultQueryHint="search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.SearchView>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerHotel"
+            android:layout_below="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="true"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="vertical"
+            android:visibility="@{!viewModel.isLoading ? View.VISIBLE : View.GONE}"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            tools:itemCount="5"
+            tools:listitem="@layout/item_hotel"
+            tools:visibility="visible" />
+
+        <ProgressBar
+            android:id="@android:id/empty"
+            android:layout_below="@+id/searchView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:indeterminate="true"
+            android:indeterminateTint="?android:colorAccent"
+            android:indeterminateTintMode="src_in"
+            android:visibility="@{viewModel.isLoading ? View.VISIBLE : View.GONE}" />
+
+    </RelativeLayout>
+
+</layout>
