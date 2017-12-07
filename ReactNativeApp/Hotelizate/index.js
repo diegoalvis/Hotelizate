@@ -1,4 +1,10 @@
-import { AppRegistry } from 'react-native';
-import App from './App';
+const store = getStore(navReducer);
+const AppIndex = connect( state => ({ nav: state.nav }) )(App)
 
-AppRegistry.registerComponent('Hotelizate', () => App);
+export default Index = () => {
+    return (
+        <Provider store={store}>
+            <AppIndex />
+        </Provider>
+    )
+}

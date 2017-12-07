@@ -1,0 +1,28 @@
+dependencies: \
+  /Users/diegoalvis/code/React_Native/react-native-netflix/node_modules/react-native/React/Base/RCTModuleMethod.mm \
+  /Users/diegoalvis/code/React_Native/react-native-netflix/node_modules/react-native/React/Base/RCTModuleMethod.h \
+  /Users/diegoalvis/code/React_Native/react-native-netflix/node_modules/react-native/React/Base/RCTBridgeMethod.h \
+  /Users/diegoalvis/code/React_Native/react-native-netflix/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/diegoalvis/code/React_Native/react-native-netflix/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/diegoalvis/code/React_Native/react-native-netflix/node_modules/react-native/React/Base/RCTNullability.h \
+  /Users/diegoalvis/code/React_Native/react-native-netflix/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/diegoalvis/code/React_Native/react-native-netflix/node_modules/react-native/React/Base/RCTBridge+Private.h \
+  /Users/diegoalvis/code/React_Native/react-native-netflix/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/diegoalvis/code/React_Native/react-native-netflix/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/diegoalvis/code/React_Native/react-native-netflix/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/diegoalvis/code/React_Native/react-native-netflix/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/diegoalvis/code/React_Native/react-native-netflix/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/diegoalvis/code/React_Native/react-native-netflix/node_modules/react-native/React/Base/RCTConvert.h \
+  /Users/diegoalvis/code/React_Native/react-native-netflix/node_modules/react-native/React/Views/RCTAnimationType.h \
+  /Users/diegoalvis/code/React_Native/react-native-netflix/node_modules/react-native/React/Views/RCTBorderStyle.h \
+  /Users/diegoalvis/code/React_Native/react-native-netflix/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/diegoalvis/code/React_Native/react-native-netflix/node_modules/react-native/React/Base/RCTUtils.h \
+  /Users/diegoalvis/code/React_Native/react-native-netflix/node_modules/react-native/React/Views/RCTPointerEvents.h \
+  /Users/diegoalvis/code/React_Native/react-native-netflix/node_modules/react-native/React/Views/RCTTextDecorationLineType.h \
+  /Users/diegoalvis/code/React_Native/react-native-netflix/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/diegoalvis/code/React_Native/react-native-netflix/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/diegoalvis/code/React_Native/react-native-netflix/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/diegoalvis/code/React_Native/react-native-netflix/node_modules/react-native/React/Base/RCTCxxConvert.h \
+  /Users/diegoalvis/code/React_Native/react-native-netflix/node_modules/react-native/React/Base/RCTManagedPointer.h \
+  /Users/diegoalvis/code/React_Native/react-native-netflix/node_modules/react-native/React/Base/RCTParserUtils.h \
+  /Users/diegoalvis/code/React_Native/react-native-netflix/node_modules/react-native/React/Profiler/RCTProfile.h

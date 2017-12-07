@@ -1,0 +1,2 @@
+dependencies: \
+  /Users/diegoalvis/code/React_Native/react-native-netflix/ios/build/Build/Intermediates/HotelizateApp.build/Debug-iphonesimulator/HotelizateApp.build/DerivedSources/HotelizateApp_vers.c
